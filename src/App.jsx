@@ -7,15 +7,17 @@ import Contact from "./pages/Contact";
 
 export default function App() {
   return (
-    <HashRouter>
     <Layout>
+    <HashRouter>
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Layout>
+    
     </HashRouter>
+    </Layout>
   );
 }
